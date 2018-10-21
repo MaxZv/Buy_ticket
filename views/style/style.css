@@ -1,0 +1,119 @@
+body{
+    background-image: url('https://www.livingplanit.com.au/wp-content/uploads/2017/07/gradient-wallpaper-3.jpg');
+}
+.head{
+    height: 50px;
+    text-align: center;
+}
+.places{
+    padding-top: 0px;
+    margin-top: 100px;
+}
+/*.second_group{*/
+    /*background-color: blueviolet;*/
+/*}*/
+/*.third_group{*/
+    /*background-color: gold;*/
+/*}*/
+
+.auth {
+   margin-top: 150px;
+
+}
+.content{
+    margin-top: 50px;
+    text-align: center;
+}
+.footer{
+    margin-top: 90%;
+    text-align: center;
+}
+.remove_button_css {
+    outline: none;
+    padding: 5px;
+    border: 0px;
+    box-sizing: none;
+    background-color: transparent;
+}
+
+
+/*чекбоксы*/
+
+.checkbox-wrapper {
+    display: inline-block;
+    transform: translateX(-50%) translateY(-50%);
+}
+.checkbox-wrapper input {
+    cursor: pointer;
+    height: 20px;
+    margin: 0px;
+    opacity: 0;
+    position: absolute;
+    width: 20px;
+    z-index: 2;
+}
+.checkbox-wrapper input:active + .checkbox:before {
+    height: 50px;
+    width: 50px;
+}
+.checkbox-wrapper input:checked + .checkbox {
+    border: 2px solid #29b6f6;
+}
+.checkbox-wrapper input:checked + .checkbox:before {
+    animation: pulse 1s cubic-bezier(0.15, 0.8, 0.5, 1);
+}
+.checkbox-wrapper input:checked + .checkbox:after {
+    height: 20px;
+    opacity: 1;
+    width: 20px;
+}
+.checkbox-wrapper .checkbox {
+    border: 2px solid black;
+    border-radius: 2px;
+    height: 16px;
+    position: relative;
+    transition: all 0.5s;
+    width: 16px;
+}
+.checkbox-wrapper .checkbox:before, .checkbox-wrapper .checkbox:after {
+    content: '';
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    transition: all 0.5s;
+}
+.checkbox-wrapper .checkbox:before {
+    background-color: rgba(242, 242, 242, 0.9);
+    border-radius: 50%;
+    height: 5px;
+    width: 5px;
+    z-index: -1;
+}
+.checkbox-wrapper .checkbox:after {
+    background-color: #29b6f6;
+    border-radius: 2px;
+    height: 5px;
+    opacity: 0;
+    width: 5px;
+}
+.checkbox-wrapper .checkbox i {
+    color: white;
+    height: 18px;
+    left: 0px;
+    pointer-events: none;
+    position: absolute;
+    top: 0px;
+    width: 18px;
+    z-index: 2;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0px #29b6f6;
+    }
+    100% {
+        box-shadow: 0 0 0 25px rgba(242, 242, 242, 0);
+    }
+}
+
